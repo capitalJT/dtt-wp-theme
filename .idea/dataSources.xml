@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="http://localhost:8888/phpmyadmin/db_structure.php?server=1&amp;db=dtt-wp&amp;token=1140df00c55643d9cf736d0a8d8bd2a4" uuid="040fba41-da9a-4d7e-8588-7070947257b7">
+      <driver-ref>mysql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
+      <jdbc-url>http://localhost:8888/phpmyadmin/db_structure.php?server=1&amp;db=dtt-wp&amp;token=1140df00c55643d9cf736d0a8d8bd2a4</jdbc-url>
+      <driver-properties>
+        <property name="autoReconnect" value="true" />
+        <property name="zeroDateTimeBehavior" value="convertToNull" />
+        <property name="tinyInt1isBit" value="false" />
+        <property name="characterEncoding" value="utf8" />
+        <property name="characterSetResults" value="utf8" />
+        <property name="yearIsDateType" value="false" />
+      </driver-properties>
+    </data-source>
+  </component>
+</project>
