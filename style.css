@@ -152,7 +152,7 @@ body > div {
 body {
 	background-color: #fff;
 	color: #000;
-	font-family: 'Cormorant Garamond', serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 22px;
 	font-size: 2.2rem;
 	font-weight: 400;
@@ -263,7 +263,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 400;
 	line-height: 1.2;
 	margin: 0 0 20px;
@@ -438,7 +438,7 @@ input[type="submit"],
 	border: none;
 	color: #fff;
 	cursor: pointer;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 500;
@@ -513,7 +513,7 @@ input[type="search"]::-webkit-search-results-button {
 .home-odd a.button {
 	background: transparent;
 	clear: both;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	font-weight: 500;
@@ -1073,7 +1073,7 @@ img.alignright,
 }
 
 .site-title {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
 	font-size: 1.8rem;
 	font-weight: 500;
@@ -1156,7 +1156,7 @@ img.alignright,
 .genesis-nav-menu a {
 	color: #fff;
 	display: block;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 12px;
 	font-size: 1.2rem;
 	font-weight: 500;
@@ -1608,7 +1608,7 @@ p.entry-meta {
 	color: #fff;
 	cursor: pointer;
 	display: inline-block;
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	letter-spacing: 1px;
@@ -1818,7 +1818,7 @@ p.form-submit,
 }
 
 .site-footer p {
-	font-family: 'Quicksand', sans-serif;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 14px;
 	font-size: 1.4rem;
 	margin-bottom: 0;
