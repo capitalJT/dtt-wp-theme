@@ -2,7 +2,7 @@
   border: solid thin red;
   float: left;
   clear: both;
-  width: 70%;
+  width: 100%;
   padding: 0 10px;
   article{
     border: solid thin green;
@@ -21,15 +21,13 @@
   .news-title{
     font-size: 2.2rem;
   }
+
+
   .news-image,
   .news-content{
-    float: left;
-  }
-  .news-image{
-    width: 30%;
+    width: 100%;
   }
   .news-content{
-    width: 70%;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -37,5 +35,18 @@
     font-size: 14px;
     display: block;
     margin-bottom: 5px;
+  }
+  @media only screen and (min-width: 860px){
+    width: 70%;
+    .news-image,
+    .news-content{
+      float: left;
+    }
+    .news-image{
+      width:30%;
+    }
+    .news-content{
+      width: 70%;
+    }
   }
 }

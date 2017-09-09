@@ -134,6 +134,9 @@ $brand-color: #C9A533;
   display: none;
 }
 
+body{
+  margin: 0;
+}
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
@@ -185,7 +188,6 @@ $brand-color: #C9A533;
   }
 
   .content,
-  .sidebar,
   .site-header .widget-area,
   .title-area {
     width: 100%;

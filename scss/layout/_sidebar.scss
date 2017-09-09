@@ -3,8 +3,6 @@
 
 .sidebar {
   float: right;
-  //width: 360px;
-  width: 30%;
 }
 
 .sidebar-content .sidebar {
@@ -32,5 +30,9 @@
 .sidebar{
   border: solid thin green;
   padding: 0 10px;
+  width: 100%;
+  @media only screen and (min-width: 860px){
+    width: 30%;
+  }
 
 }

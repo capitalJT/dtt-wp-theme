@@ -47,14 +47,14 @@ html {
 
 /* Chrome fix */
 body > div {
-  font-size: 2.2rem; }
+  font-size: 1.6rem; }
 
 body {
   background-color: #fff;
   color: #000;
   font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
-  font-size: 2.2rem;
+  font-size: 16px;
+  font-size: 1.5rem;
   font-weight: 400;
   line-height: 1.5;
   -webkit-font-smoothing: antialiased; }
@@ -92,7 +92,7 @@ a:focus {
   color: #000; }
 
 p {
-  margin: 0 0 30px;
+  margin: 0 0 15px;
   padding: 0; }
 
 ol,
@@ -119,6 +119,8 @@ mark {
 blockquote {
   color: #999;
   margin: 40px; }
+  blockquote p {
+    font-size: 20px; }
 
 blockquote::before {
   content: "\201C";
@@ -468,7 +470,7 @@ th {
 
 .site-inner {
   clear: both;
-  margin-top: 170px; }
+  margin-top: 100px; }
 
 .parallax-home .site-inner {
   margin-top: 66px;
@@ -3453,8 +3455,7 @@ a.text-dark:focus, a.text-dark:hover {
 /* Sidebar
 ---------------------------------------------------------------------------------------------------- */
 .sidebar {
-  float: right;
-  width: 30%; }
+  float: right; }
 
 .sidebar-content .sidebar {
   float: left; }
@@ -3475,7 +3476,11 @@ a.text-dark:focus, a.text-dark:hover {
 
 .sidebar {
   border: solid thin green;
-  padding: 0 10px; }
+  padding: 0 10px;
+  width: 100%; }
+  @media only screen and (min-width: 860px) {
+    .sidebar {
+      width: 30%; } }
 
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
@@ -3502,7 +3507,7 @@ a.text-dark:focus, a.text-dark:hover {
 /* Entries
 --------------------------------------------- */
 .entry {
-  margin-bottom: 40px; }
+  margin-bottom: 20px; }
 
 .sidebar .entry {
   margin-bottom: 40px; }
@@ -3540,8 +3545,8 @@ p.entry-meta {
   border-bottom: 1px solid #000;
   content: "";
   display: block;
-  margin: 0 auto 60px;
-  padding-bottom: 30px;
+  margin: 0 auto 20px;
+  padding-bottom: 15px;
   width: 10%; }
 
 .footer-widgets .entry-header::after,
@@ -3630,13 +3635,13 @@ p.entry-meta {
   width: 700px; }
 
 .page .content {
-  padding-bottom: 50px; }
+  padding-bottom: 20px; }
 
 .sidebar-content .content {
   float: right; }
 
 .full-width-content .content {
-  padding: 0 200px 40px;
+  padding: 0 160px 20px;
   width: 100%; }
 
 .full-width-content.parallax-home .content {
@@ -3818,8 +3823,6 @@ p.form-submit,
 .home-even,
 .home-odd {
   clear: both;
-  font-size: 20px;
-  font-size: 2rem;
   overflow: hidden;
   text-align: center; }
 
@@ -3937,7 +3940,7 @@ p.form-submit,
   border: solid thin red;
   float: left;
   clear: both;
-  width: 70%;
+  width: 100%;
   padding: 0 10px; }
   .news-list article {
     border: solid thin green;
@@ -3953,17 +3956,24 @@ p.form-submit,
     font-size: 2.2rem; }
   .news-list .news-image,
   .news-list .news-content {
-    float: left; }
-  .news-list .news-image {
-    width: 30%; }
+    width: 100%; }
   .news-list .news-content {
-    width: 70%;
     padding-left: 10px;
     padding-right: 10px; }
   .news-list .news-meta {
     font-size: 14px;
     display: block;
     margin-bottom: 5px; }
+  @media only screen and (min-width: 860px) {
+    .news-list {
+      width: 70%; }
+      .news-list .news-image,
+      .news-list .news-content {
+        float: left; }
+      .news-list .news-image {
+        width: 30%; }
+      .news-list .news-content {
+        width: 70%; } }
 
 /* Table of Contents
 	- HTML5 Reset
@@ -4040,6 +4050,9 @@ p.form-submit,
 #wpstats {
   display: none; }
 
+body {
+  margin: 0; }
+
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1180px) {
@@ -4071,7 +4084,6 @@ p.form-submit,
     padding-bottom: 10px;
     position: static; }
   .content,
-  .sidebar,
   .site-header .widget-area,
   .title-area {
     width: 100%; }
