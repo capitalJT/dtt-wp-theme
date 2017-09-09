@@ -1,0 +1,39 @@
+/* Search Form
+--------------------------------------------- */
+
+.search-form {
+  overflow: hidden;
+  position: relative;
+}
+
+.site-header .search-form {
+  float: right;
+  margin-top: 4px;
+}
+
+.entry-content .search-form,
+.site-header .search-form {
+  width: 50%;
+}
+
+.error404 .content .search-form {
+  margin-bottom: 40px;
+}
+
+.genesis-nav-menu .search input[type="submit"],
+.widget_search input[type="submit"] {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.widget_search input[type="submit"]:focus {
+  border-left: 1px solid #ddd;
+  padding: 18px 16px;
+  right: 2px;
+  top: 2px;
+}

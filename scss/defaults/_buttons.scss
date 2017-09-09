@@ -1,0 +1,63 @@
+/* Buttons
+--------------------------------------------- */
+
+.footer-widgets a.button,
+.footer-widgets button,
+.footer-widgets input[type="button"],
+.footer-widgets input[type="reset"],
+.footer-widgets input[type="submit"],
+.home-even a.button,
+.home-odd a.button {
+  background: transparent;
+  clear: both;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  padding: 15px 25px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.footer-widgets a.button,
+.footer-widgets button,
+.footer-widgets input[type="button"],
+.footer-widgets input[type="reset"],
+.footer-widgets input[type="submit"],
+.home-odd a.button {
+  border: 2px solid #fff;
+  color: #fff !important;
+}
+
+.footer-widgets a.button:hover,
+.footer-widgets a.button:focus,
+.home-odd a.button:hover,
+.home-odd a.button:focus {
+  background-color: #fff;
+  color: #000 !important;
+}
+
+.footer-widgets button:focus,
+.footer-widgets button:hover,
+.footer-widgets input[type="button"]:focus,
+.footer-widgets input[type="button"]:hover,
+.footer-widgets input[type="reset"]:focus,
+.footer-widgets input[type="reset"]:hover,
+.footer-widgets input[type="submit"]:focus,
+.footer-widgets input[type="submit"]:hover {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+
+.home-even a.button {
+  border: 2px solid #000;
+  color: #000;
+}
+
+.home-even a.button:hover,
+.home-even a.button:focus {
+  background-color: #000;
+  color: #fff;
+}

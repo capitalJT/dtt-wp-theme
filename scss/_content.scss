@@ -1,0 +1,26 @@
+/* Content
+--------------------------------------------- */
+
+.content {
+  float: left;
+  width: 700px;
+
+}
+
+.page .content {
+  padding-bottom: 50px;
+}
+
+.sidebar-content .content {
+  float: right;
+}
+
+.full-width-content .content {
+  padding: 0 200px 40px;
+  width: 100%;
+}
+
+.full-width-content.parallax-home .content {
+  margin-top: 0;
+  padding: 0;
+}

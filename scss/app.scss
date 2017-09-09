@@ -1,5 +1,440 @@
-@import "lorem-grid";
+$brand-color: #C9A533;
 
-body{
-  //color: red !important;
+@import "normalize";
+@import "box-sizing";
+@import "defaults/float-clearing";
+@import "defaults/typographical_elements";
+@import "defaults/headings";
+@import "defaults/objects";
+@import "defaults/gallery";
+@import "defaults/forms";
+@import "defaults/buttons";
+@import "defaults/tables";
+@import "defaults/screen-reader";
+
+@import "site-containers";
+@import "column-classes";
+@import "avatar";
+@import "genesis";
+@import "search-form";
+@import "titles";
+@import "wordpress";
+
+@import "functions";
+@import "variables";
+@import "mixins";
+@import "type";
+@import "grid";
+@import "utilities";
+
+@import "site-navigation";
+@import "simple-social-icons";
+
+@import "layout/site-header";
+@import "title-area";
+@import "widget-area";
+@import "skip-links";
+
+@import "layout/sidebar";
+@import "layout/site-footer";
+
+@import "entries";
+@import "content-boxes";
+@import "content";
+@import "pagination";
+@import "pricing-table";
+
+@import "footer-widgets";
+@import "comments";
+
+@import "homepage";
+
+@import "lorem-grid";
+@import "news-list";
+
+/* Table of Contents
+	- HTML5 Reset
+		- Baseline Normalize
+		- Box Sizing
+		- Float Clearing
+	- Defaults
+		- Typographical Elements
+		- Headings
+		- Objects
+		- Gallery
+		- Forms
+		- Buttons
+		- Tables
+		- Screen Reader Text
+	- Structure and Layout
+		- Site Containers
+		- Column Widths and Positions
+		- Column Classes
+	- Common Classes
+		- Avatar
+		- Genesis
+		- Search Form
+		- Titles
+		- WordPress
+	- Widgets
+		- Simple Social Icons
+	- Plugins
+		- Genesis eNews Extended
+		- Jetpack
+	- Skip Links
+	- Site Header
+		- Title Area
+		- Widget Area
+	- Site Navigation
+		- Header Navigation
+		- Primary Navigation
+		- Secondary Navigation
+		- Responsive Navigation
+	- Content Area
+		- Homepage
+		- Pricing Table
+		- Content
+		- Entries
+		- Entry Meta
+		- After Entry
+		- Pagination
+		- Content Boxes
+		- Comments
+	- Sidebar
+	- Footer Widgets
+	- Site Footer
+	- Media Queries
+		- Retina Display
+		- Max-width: 1180px
+		- Max-width: 1020px
+		- Max-width: 860px
+		- Max-width: 480px
+*/
+
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget input {
+  margin-bottom: 20px;
+}
+
+.footer-widgets .enews-widget input:hover[type="submit"] {
+  background-color: #fff;
+  color: #000;
+}
+
+.enews form + p {
+  margin-top: 24px;
+}
+
+/* Jetpack
+--------------------------------------------- */
+
+#wpstats {
+  display: none;
+}
+
+/* Media Queries
+---------------------------------------------------------------------------------------------------- */
+
+@media only screen and (max-width: 1180px) {
+
+  .site-inner,
+  .wrap {
+    max-width: 960px;
+  }
+
+  .site-header .widget-area {
+    width: 560px;
+  }
+
+  .home-section-1,
+  .home-section-3,
+  .home-section-5 {
+    background-attachment: scroll;
+    background-position: top;
+    -webkit-background-size: auto;
+    -moz-background-size:    auto;
+    background-size:         auto;
+  }
+
+  .content {
+    width: 520px;
+  }
+
+  .full-width-content .content {
+    padding: 0 110px;
+  }
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+  .site-inner,
+  .wrap {
+    max-width: 768px;
+  }
+
+  .parallax-home .site-inner {
+    max-width: none;
+  }
+
+  .site-header {
+    padding-bottom: 10px;
+    position: static;
+  }
+
+  .content,
+  .sidebar,
+  .site-header .widget-area,
+  .title-area {
+    width: 100%;
+  }
+
+  .genesis-nav-menu,
+  .site-header .widget-area,
+  .site-title {
+    text-align: center;
+  }
+
+  .header-image .site-title > a {
+    background-position: center !important;
+    margin: 0 auto 10px;
+  }
+
+  .genesis-nav-menu a {
+    padding: 10px;
+  }
+
+  .parallax-home .site-inner {
+    margin-top: 0;
+  }
+
+  .site-inner {
+    margin-top: 80px;
+  }
+
+  .full-width-content .content {
+    padding: 0;
+  }
+
+  .full-width-content img.pull-left {
+    margin-left: 0;
+  }
+
+  .full-width-content img.pull-right {
+    margin-right: 0;
+  }
+
+  .five-sixths,
+  .four-sixths,
+  .one-fourth,
+  .one-half,
+  .one-sixth,
+  .one-third,
+  .pricing-table .one-third,
+  .three-fourths,
+  .three-sixths,
+  .two-fourths,
+  .two-sixths,
+  .two-thirds {
+    margin: 0;
+    width: 100%;
+  }
+
+  .pricing-table .one-third:nth-child(3n+1) {
+    border-right: 2px solid #000;
+  }
+
+  .pricing-table .one-third:nth-child(3n+2) {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+
+  .pricing-table .one-third:nth-child(3n) {
+    border-left: 2px solid #000;
+  }
+
+}
+
+@media only screen and (max-width: 860px) {
+
+  .site-inner,
+  .wrap {
+    max-width: none;
+    width: 100%;
+  }
+
+  .site-inner,
+  .wrap {
+    padding: 0 5%;
+  }
+
+  .parallax-home .site-inner {
+    padding: 0;
+  }
+
+  .nav-primary-active .content {
+    margin-top: 20px;
+  }
+
+  nav.genesis-responsive-menu  {
+    display: none;
+    position: relative;
+  }
+
+  .genesis-skip-link .skip-link-hidden {
+    display: none;
+    visibility: hidden;
+  }
+
+  .site-header nav .wrap {
+    padding: 0;
+  }
+
+  .menu-toggle,
+  .sub-menu-toggle {
+    background-color: transparent;
+    border-width: 0;
+    color: #fff;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    visibility: visible;
+  }
+
+  .site-inner .menu-toggle,
+  .site-inner .menu-toggle:focus,
+  .site-inner .menu-toggle:hover {
+    background-color: #000;
+  }
+
+  .menu-toggle:hover,
+  .menu-toggle:focus,
+  .sub-menu-toggle:hover,
+  .sub-menu-toggle:focus {
+    background: transparent;
+    border-width: 0;
+    color: $brand-color;
+  }
+
+  .menu-toggle:focus,
+  .sub-menu-toggle:focus {
+    outline-color: #fff;
+    outline-style: dotted;
+  }
+
+  .menu-toggle {
+    line-height: 20px;
+    position: relative;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+  }
+
+  .menu-toggle:before {
+    margin-right: 10px;
+    text-rendering: auto;
+    -webkit-transform: translate(0, 0);
+    -ms-transform:     translate(0, 0);
+    transform:         translate(0, 0);
+  }
+
+  .sub-menu-toggle {
+    float: right;
+    padding: 7px 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+  }
+
+  .sub-menu-toggle::before {
+    -webkit-transform: rotate(0, 0);
+    -ms-transform:     rotate(0, 0);
+    transform:         rotate(0, 0);
+    -webkit-transition: transform .25s ease-in-out;
+    -ms-transition:     transform .25s ease-in-out;
+    transition:         transform .25s ease-in-out;
+  }
+
+  .sub-menu-toggle.activated::before {
+    -webkit-transform: rotate(180deg);
+    -ms-transform:     rotate(180deg);
+    transform:         rotate(180deg);
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .menu-item {
+    display: block;
+    float: none;
+    position: relative;
+    text-align: left;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .menu-item a,
+  .genesis-responsive-menu .genesis-nav-menu .menu-item a:focus {
+    outline-color: #fff;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .menu-item a {
+    border: none;
+    padding: 12px;
+    width: 100%;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .sub-menu {
+    border: none;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu,
+  .genesis-responsive-menu .genesis-nav-menu .menu-item > a:focus ul.sub-menu .sub-menu {
+    left: 0;
+    margin-left: 0;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu > .menu-item-has-children > a:after {
+    content: none;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .sub-menu {
+    clear: both;
+    display: none;
+    margin: 0;
+    opacity: 1;
+    padding-left: 15px;
+    position: static;
+    width: 100%;
+  }
+
+  .genesis-responsive-menu .genesis-nav-menu .sub-menu .sub-menu {
+    margin: 0;
+  }
+
+  .home-even,
+  .home-odd {
+    padding: 90px 0 100px;
+  }
+
+  .parallax-home .simple-social-icons ul li {
+    margin: 0 20px 20px !important;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+
+  .footer-widgets .widget-title,
+  .home-even .widget-title,
+  .home-odd .widget-title {
+    font-size: 36px;
+    font-size: 3.6rem;
+  }
+
+  .home-even,
+  .home-odd {
+    font-size: 22px;
+    font-size: 2.2rem;
+  }
+
 }

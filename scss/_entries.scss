@@ -1,0 +1,110 @@
+/* Entries
+--------------------------------------------- */
+
+.entry {
+  margin-bottom: 40px;
+}
+
+.sidebar .entry {
+  margin-bottom: 40px;
+}
+
+.entry-content ol,
+.entry-content ul {
+  margin-bottom: 30px;
+  margin-left: 40px;
+}
+
+.entry-content ol > li {
+  list-style-type: decimal;
+}
+
+.entry-content ul > li {
+  list-style-type: disc;
+}
+
+.entry-content ol ol,
+.entry-content ul ul {
+  margin-bottom: 0;
+}
+
+.entry-content code {
+  background-color: #000;
+  color: #ddd;
+}
+
+/* Entry Meta
+--------------------------------------------- */
+
+p.entry-meta {
+  font-size: 20px;
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+
+.entry-header {
+  text-align: center;
+}
+
+.entry-header::after {
+  border-bottom: 1px solid #000;
+  content: "";
+  display: block;
+  margin: 0 auto 60px;
+  padding-bottom: 30px;
+  width: 10%;
+}
+
+.footer-widgets .entry-header::after,
+.sidebar .entry-header::after {
+  display: none;
+}
+
+.entry-categories::before,
+.entry-tags::before {
+  display: inline-block;
+  font: normal 20px/1 'dashicons';
+  margin-right: 5px;
+  margin-top: 2px;
+  vertical-align: top;
+  -webkit-font-smoothing: antialiased;
+}
+
+.entry-categories::before {
+  content: "\f318";
+}
+
+.entry-tags::before {
+  content: "\f323";
+}
+
+.entry-categories,
+.entry-tags {
+  display: block;
+}
+
+.entry-comments-link::before {
+  content: "\2014";
+  margin: 0 6px 0 2px;
+}
+
+/* After Entry
+--------------------------------------------- */
+
+.after-entry {
+  border-top: 1px solid #000;
+  padding: 40px 0;
+}
+
+.after-entry .widget {
+  margin-bottom: 40px;
+}
+
+.after-entry p:last-child,
+.after-entry .widget:last-child {
+  margin: 0;
+}
+
+.after-entry li {
+  list-style-type: none;
+}

@@ -1,0 +1,15 @@
+/* Site Header
+---------------------------------------------------------------------------------------------------- */
+
+.site-header {
+  background-color: #000;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.admin-bar .site-header {
+  top: 32px;
+}

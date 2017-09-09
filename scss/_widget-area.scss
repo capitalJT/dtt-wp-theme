@@ -1,0 +1,23 @@
+/* Widget Area
+--------------------------------------------- */
+
+.site-header .widget-area {
+  float: right;
+  text-align: right;
+  width: 740px;
+}
+
+.site-header .widget-area,
+.site-header .widget-area a,
+.site-header .widget-area h4 {
+  color: #fff;
+}
+
+.site-header .widget-area a:focus,
+.site-header .widget-area a:hover {
+  color: $brand-color;
+}
+
+.site-header .textwidget {
+  margin-top: 27px;
+}

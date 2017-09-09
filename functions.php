@@ -225,3 +225,20 @@ function custom_load_custom_style_sheet() {
     wp_enqueue_style( 'custom-stylesheet', CHILD_URL . '/css/app.css', array(), PARENT_THEME_VERSION );
 }
 
+
+// news-menu widget
+genesis_register_widget_area( array(
+    'id'          => 'news-menu',
+    'name'        => __( 'News Sidebar', 'parallax-pro' ),
+    'description' => __( 'News Widget', 'parallax-pro' ),
+) );
+
+
+// Adding custom post type to category page
+add_action('pre_get_posts', function($query) {
+  if ( ! is_admin() && $query->is_main_query() ) {
+    if ( is_archive() || is_category() ) {
+      $query->set( 'post_type', 'cyber_news' );
+    }
+  }
+});

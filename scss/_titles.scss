@@ -1,0 +1,59 @@
+/* Titles
+--------------------------------------------- */
+
+.archive-title {
+  font-size: 20px;
+  font-size: 3rem;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.entry-title {
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+.sidebar .entry-title {
+  font-size: 24px;
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+.entry-title a {
+  color: #000;
+}
+
+.entry-title a:focus,
+.entry-title a:hover {
+  color: $brand-color;
+}
+
+.widget-title {
+  font-size: 20px;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.footer-widgets .widget-title,
+.sidebar .widget-title {
+  font-weight: 500;
+}
+
+.footer-widgets .widget-title {
+  color: #fff;
+  font-size: 48px;
+  font-size: 4.8rem;
+}
+
+.home-even .widget-title,
+.home-odd .widget-title {
+  font-size: 60px;
+  font-size: 6rem;
+  margin-bottom: 40px;
+}
+
+.home-section-1 .widget-title {
+  font-size: 72px;
+  font-size: 7.2rem;
+}

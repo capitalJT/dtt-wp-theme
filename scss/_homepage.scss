@@ -1,0 +1,94 @@
+/* Homepage
+--------------------------------------------- */
+
+.home-even,
+.home-odd {
+  clear: both;
+  font-size: 20px;
+  font-size: 2rem;
+  overflow: hidden;
+  text-align: center;
+}
+
+.home-even {
+  padding: 140px 0 150px;
+}
+
+.home-odd {
+  padding: 190px 0 200px;
+}
+
+.home-even .wrap,
+.home-odd .wrap {
+  max-width: 960px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.home-even .widget,
+.home-odd .widget {
+  margin-bottom: 40px;
+}
+
+.home-even p:last-child,
+.home-even .widget:last-child,
+.home-odd p:last-child,
+.home-odd .widget:last-child {
+  margin-bottom: 0;
+}
+
+.home-odd,
+.home-odd a:hover,
+.home-odd a:focus,
+.home-odd h1,
+.home-odd h2,
+.home-odd h3,
+.home-odd h4,
+.home-odd h5,
+.home-odd h6,
+.home-odd .featured-content .entry-title a,
+.home-odd .widget-title {
+  color: #fff;
+}
+
+.home-odd .featured-content .entry-title a:focus,
+.home-odd .featured-content .entry-title a:hover {
+  color: $brand-color;
+}
+
+.home-even p:last-child,
+.home-odd p:last-child {
+  margin-bottom: 0;
+}
+
+.home-even {
+  background-color: #fff;
+}
+
+.home-section-1,
+.home-section-3,
+.home-section-5 {
+  background-attachment: fixed;
+  background-color: #000;
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size:    cover;
+  background-size:         cover;
+}
+
+.home-section-1 {
+  display: table;
+  height: calc(100vh - 66px);
+  overflow: hidden;
+  padding: 100px 0;
+  table-layout: fixed;
+  text-align: center;
+  width: 100%;
+}
+
+.home-section-1 .full-height {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
