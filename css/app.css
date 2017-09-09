@@ -4053,6 +4053,9 @@ p.form-submit,
 body {
   margin: 0; }
 
+.container {
+  clear: both; }
+
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 @media only screen and (max-width: 1180px) {

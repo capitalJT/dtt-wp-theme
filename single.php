@@ -4,6 +4,7 @@
  * User: jabaltorres
  * Date: 9/9/17
  * Time: 12:46 AM
+ * This is the single page overwrite
  */
 
 //* Add custom body class to the head
@@ -18,17 +19,6 @@ function single_posts_body_class( $classes ) {
 
 //* Remove site footer widgets
 //remove_action( 'genesis_before_footer', 'genesis_footer_widget_areas' );
-
-
-/* Code to Display Featured Image on top of the post */
-//add_action( 'genesis_before_entry', 'featured_post_image', 8 );
-//
-//function featured_post_image() {
-////  if ( ! is_singular( 'post' ) )  return;
-//  the_post_thumbnail('post-image');
-//}
-
-
 
 add_action( 'genesis_entry_header', 'single_post_featured_image', 15 );
 
