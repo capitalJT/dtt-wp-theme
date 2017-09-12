@@ -242,3 +242,23 @@ add_action('pre_get_posts', function($query) {
     }
   }
 });
+
+
+add_action( 'genesis_entry_footer', 'wpb_prev_next_post_nav_cpt' );
+
+function wpb_prev_next_post_nav_cpt(){
+  if (!is_singular(array('cyber_news','advisory_team', 'post'))) //add your CPT name to the array
+    return;
+  genesis_markup(array(
+      'html5' => '<div %s>',
+      'xhtml' => '<div class="navigation">',
+      'context' => 'adjacent-entry-pagination',
+  ));
+  echo '<div class="pagination-previous alignleft">';
+  previous_post_link();
+  echo '</div>';
+  echo '<div class="pagination-next alignright">';
+  next_post_link();
+  echo '</div>';
+  echo '</div>';
+}

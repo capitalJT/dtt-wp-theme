@@ -1,11 +1,12 @@
 .news-list {
-  border: solid thin red;
+  //border: solid thin red;
   float: left;
   clear: both;
   width: 100%;
   padding: 0 10px;
   article{
-    border: solid thin green;
+    border: solid thin #eee;
+    padding: 10px;
     clear:both;
     margin-bottom: 20px;
   }

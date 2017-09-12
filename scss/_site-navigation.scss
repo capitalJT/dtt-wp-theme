@@ -141,3 +141,11 @@
   display: none;
   visibility: hidden;
 }
+
+@media only screen and (max-width: 860px) {
+
+}
+
+.menu-item.current-menu-item{
+  border-bottom: solid thick $brand-color;
+}

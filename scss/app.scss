@@ -48,6 +48,8 @@ $brand-color: #C9A533;
 @import "comments";
 
 @import "homepage";
+@import "pages/advisory-member";
+@import "pages/search-results";
 
 @import "lorem-grid";
 @import "news-list";
@@ -445,4 +447,32 @@ body{
     font-size: 2.2rem;
   }
 
+}
+
+
+@media only screen and (max-width: 860px) {
+  //#genesis-mobile-nav-header{
+  //  border: solid thin red;
+  //}
+
+  .site-header{
+    .title-area{
+      //border: solid thin red;
+    }
+    .menu-toggle{
+      width: 120px;
+      //border: solid thin green;
+      position: absolute;
+      right:42px;
+      top: 3px;
+    }
+  }
+}
+
+
+@media only screen and (max-width: 1020px){
+  .header-image .site-title > a {
+    margin: 0;
+    //border: solid thin green;
+  }
 }

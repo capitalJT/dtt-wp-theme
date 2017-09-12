@@ -24,15 +24,11 @@ function advisory_loop(){
               $memberTitle = get_field('member_title');
           ?>
 
-          <div class="col-xs-12 col-sm-3">
-
-            <div>
+          <div class="col-xs-12 col-sm-3 card">
               <a href="<?php echo get_permalink(); ?>"><img src="<?php echo $profileImage; ?>" alt=""></a>
               <div class="member-name"><?php echo the_title();?></div>
               <div class="member-title"><?php echo $memberTitle; ?></div>
-              <a href="<?php echo get_permalink(); ?>">READ MORE</a>
-            </div>
-
+              <a class="button" href="<?php echo get_permalink(); ?>">READ MORE</a>
             <?php echo edit_post_link('(Edit)', '<span>', '</span>'); ?>
           </div>
 

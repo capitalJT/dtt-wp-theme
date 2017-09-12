@@ -27,6 +27,10 @@ function add_member_title(){
   $memberTitle = get_field('member_title');
 
   echo "<h3 class='member-title'>" . $memberTitle . "</h3>";
+
+  // next_posts_link() usage with max_num_pages
+//  next_posts_link( 'Older Entries', $the_query->max_num_pages );
+//  previous_posts_link( 'Newer Entries' );
 }
 
 // Remove Meta info

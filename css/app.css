@@ -256,7 +256,7 @@ input,
 select,
 textarea {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 1px solid #eee;
   color: #000;
   font-size: 18px;
   font-size: 1.8rem;
@@ -297,7 +297,7 @@ input[type="submit"],
   font-size: 1.4rem;
   font-weight: 500;
   letter-spacing: 1px;
-  padding: 20px;
+  padding: 10px 20px;
   text-transform: uppercase;
   white-space: normal;
   -webkit-font-smoothing: antialiased; }
@@ -555,7 +555,7 @@ th {
   border-top: 1px solid #000;
   font-size: 20px;
   font-size: 2rem;
-  margin-bottom: 100px;
+  margin-bottom: 40px;
   padding: 40px 0; }
 
 .archive-title + p {
@@ -3351,6 +3351,9 @@ a.text-dark:focus, a.text-dark:hover {
   display: none;
   visibility: hidden; }
 
+.menu-item.current-menu-item {
+  border-bottom: solid thick #C9A533; }
+
 /* Simple Social Icons
 --------------------------------------------- */
 .parallax-home .content .simple-social-icons {
@@ -3450,7 +3453,7 @@ a.text-dark:focus, a.text-dark:hover {
 /* Display outline on focus */
 :focus {
   color: #000;
-  outline: #ccc solid 1px; }
+  outline: transparent solid 1px; }
 
 /* Sidebar
 ---------------------------------------------------------------------------------------------------- */
@@ -3475,8 +3478,8 @@ a.text-dark:focus, a.text-dark:hover {
   margin-bottom: 40px; }
 
 .sidebar {
-  border: solid thin green;
-  padding: 0 10px;
+  border: solid thin #eee;
+  padding: 10px;
   width: 100%; }
   @media only screen and (min-width: 860px) {
     .sidebar {
@@ -3897,6 +3900,22 @@ p.form-submit,
   vertical-align: middle;
   width: 100%; }
 
+.advisory-team-member .attachment-post-image {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto 20px; }
+
+.page-template-adivisory-page .card {
+  text-align: center;
+  padding-bottom: 20px; }
+
+.page-template-adivisory-page .button {
+  margin-top: 10px; }
+
+.search-results article {
+  border: solid thin #eee;
+  padding: 20px; }
+
 .grid-container {
   width: 100%;
   max-width: 1200px; }
@@ -3937,13 +3956,13 @@ p.form-submit,
   outline: 1px solid #F6A1A1; }
 
 .news-list {
-  border: solid thin red;
   float: left;
   clear: both;
   width: 100%;
   padding: 0 10px; }
   .news-list article {
-    border: solid thin green;
+    border: solid thin #eee;
+    padding: 10px;
     clear: both;
     margin-bottom: 20px; }
   .news-list article:after {
@@ -4252,5 +4271,16 @@ body {
   .home-odd {
     font-size: 22px;
     font-size: 2.2rem; } }
+
+@media only screen and (max-width: 860px) {
+  .site-header .menu-toggle {
+    width: 120px;
+    position: absolute;
+    right: 42px;
+    top: 3px; } }
+
+@media only screen and (max-width: 1020px) {
+  .header-image .site-title > a {
+    margin: 0; } }
 
 /*# sourceMappingURL=app.css.map */

@@ -43,15 +43,12 @@
   }
   /*-- some extra column content styling --*/
   [class*='col-'] > p {
-    //background-color: red;
     padding: 0;
     margin: 0;
     text-align: center;
     //color: white;
   }
 }
-
-
 
 .outline, .outline *{
   outline: 1px solid #F6A1A1;
