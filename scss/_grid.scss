@@ -50,3 +50,7 @@
 @if $enable-grid-classes {
   @include make-grid-columns();
 }
+
+.container{
+  clear:both;
+}

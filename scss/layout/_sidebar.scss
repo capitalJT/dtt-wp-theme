@@ -1,17 +1,13 @@
 /* Sidebar
 ---------------------------------------------------------------------------------------------------- */
 
-.sidebar {
-  float: right;
-}
-
 .sidebar-content .sidebar {
   float: left;
 }
 
 .sidebar p:last-child {
   margin-bottom: 0;
-}
+}c
 
 .sidebar li {
   list-style-type: none;
@@ -24,13 +20,22 @@
 }
 
 .sidebar .widget {
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .sidebar{
+  float: right;
   border: solid thin #eee;
   padding: 10px;
   width: 100%;
+  .entry{
+    text-align: left;
+  }
+  .featuredpost{
+    img{
+      max-width: 70px;
+    }
+  }
   @media only screen and (min-width: 860px){
     width: 30%;
   }

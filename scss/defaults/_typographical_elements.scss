@@ -12,12 +12,12 @@ body > div {
 
 body {
   background-color: #fff;
-  color: #000;
-  font-family: 'Open Sans', sans-serif;
+  color: $body-color;
+  font-family: $font-family-base;
   font-size: 16px;
-  font-size: 1.5rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 1.6rem;
+  font-weight: $font-weight-base;
+  line-height: $line-height-base;
   -webkit-font-smoothing: antialiased;
 }
 
@@ -90,7 +90,8 @@ mark {
   color: #000;
 }
 
-blockquote {
+blockquote,
+.blockquote {
   color: #999;
   margin: 40px;
   p{
@@ -98,7 +99,8 @@ blockquote {
   }
 }
 
-blockquote::before {
+blockquote::before,
+.blockquote::before {
   content: "\201C";
   display: block;
   font-size: 30px;

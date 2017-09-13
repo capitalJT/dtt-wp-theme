@@ -1,0 +1,15 @@
+/* Genesis eNews Extended
+--------------------------------------------- */
+
+.enews-widget input {
+  margin-bottom: 20px;
+}
+
+.footer-widgets .enews-widget input:hover[type="submit"] {
+  background-color: #fff;
+  color: #000;
+}
+
+.enews form + p {
+  margin-top: 24px;
+}

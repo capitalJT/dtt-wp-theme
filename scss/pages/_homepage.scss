@@ -4,8 +4,6 @@
 .home-even,
 .home-odd {
   clear: both;
-  //font-size: 20px;
-  //font-size: 2rem;
   overflow: hidden;
   text-align: center;
 }
@@ -91,4 +89,10 @@
   display: table-cell;
   vertical-align: middle;
   width: 100%;
+}
+
+#my-form{
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }

@@ -262,3 +262,6 @@ function wpb_prev_next_post_nav_cpt(){
   echo '</div>';
   echo '</div>';
 }
+
+// disable the wpautop filter
+remove_filter( 'the_content', 'wpautop' );

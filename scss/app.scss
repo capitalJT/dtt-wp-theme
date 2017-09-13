@@ -1,5 +1,3 @@
-$brand-color: #C9A533;
-
 @import "functions";
 @import "variables";
 @import "mixins";
@@ -7,13 +5,13 @@ $brand-color: #C9A533;
 @import "normalize";
 @import "box-sizing";
 
-@import "type";
 @import "grid";
 @import "utilities";
 
 @import "defaults/float-clearing";
 @import "defaults/typographical_elements";
 @import "defaults/headings";
+@import "type";
 @import "defaults/objects";
 @import "defaults/gallery";
 @import "defaults/forms";
@@ -32,11 +30,11 @@ $brand-color: #C9A533;
 @import "site-navigation";
 @import "simple-social-icons";
 
-@import "layout/site-header";
 @import "title-area";
 @import "widget-area";
 @import "skip-links";
 
+@import "layout/site-header";
 @import "layout/sidebar";
 @import "layout/site-footer";
 
@@ -49,12 +47,16 @@ $brand-color: #C9A533;
 @import "footer-widgets";
 @import "comments";
 
+@import "templates/cyber-news";
+
+@import "plugins/genesis-eNews-extended";
+@import "plugins/jetpack";
+@import "plugins/wp-forms";
+
 @import "pages/homepage";
 @import "pages/advisory-member";
 @import "pages/search-results";
-
-@import "lorem-grid";
-@import "news-list";
+@import "pages/contact-us";
 
 /* Table of Contents
 	- HTML5 Reset
@@ -115,38 +117,6 @@ $brand-color: #C9A533;
 		- Max-width: 480px
 */
 
-/* Genesis eNews Extended
---------------------------------------------- */
-
-.enews-widget input {
-  margin-bottom: 20px;
-}
-
-.footer-widgets .enews-widget input:hover[type="submit"] {
-  background-color: #fff;
-  color: #000;
-}
-
-.enews form + p {
-  margin-top: 24px;
-}
-
-/* Jetpack
---------------------------------------------- */
-
-#wpstats {
-  display: none;
-}
-
-body{
-  margin: 0;
-}
-
-.container{
-  clear:both;
-}
-
-
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
@@ -172,7 +142,7 @@ body{
   }
 
   .full-width-content .content {
-    padding: 0 110px;
+    //padding: 0 110px;
   }
 
 }
@@ -441,3 +411,6 @@ body{
 //@include media-breakpoint-down(lg) {}
 //@include media-breakpoint-down(md) {}
 //@include media-breakpoint-down(sm) {}
+
+
+
