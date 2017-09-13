@@ -9,7 +9,10 @@
 
 .site-inner {
   clear: both;
-  margin-top: 100px;
+  margin-top: 30px;
+  @include media-breakpoint-up(xl) {
+    margin-top: 100px;
+  }
 }
 
 .parallax-home .site-inner {

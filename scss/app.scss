@@ -1,7 +1,16 @@
 $brand-color: #C9A533;
 
+@import "functions";
+@import "variables";
+@import "mixins";
+
 @import "normalize";
 @import "box-sizing";
+
+@import "type";
+@import "grid";
+@import "utilities";
+
 @import "defaults/float-clearing";
 @import "defaults/typographical_elements";
 @import "defaults/headings";
@@ -19,13 +28,6 @@ $brand-color: #C9A533;
 @import "search-form";
 @import "titles";
 @import "wordpress";
-
-@import "functions";
-@import "variables";
-@import "mixins";
-@import "type";
-@import "grid";
-@import "utilities";
 
 @import "site-navigation";
 @import "simple-social-icons";
@@ -47,7 +49,7 @@ $brand-color: #C9A533;
 @import "footer-widgets";
 @import "comments";
 
-@import "homepage";
+@import "pages/homepage";
 @import "pages/advisory-member";
 @import "pages/search-results";
 
@@ -148,15 +150,11 @@ body{
 /* Media Queries
 ---------------------------------------------------------------------------------------------------- */
 
-@media only screen and (max-width: 1180px) {
+@include media-breakpoint-down(xl) {
 
   .site-inner,
   .wrap {
     max-width: 960px;
-  }
-
-  .site-header .widget-area {
-    width: 560px;
   }
 
   .home-section-1,
@@ -164,9 +162,9 @@ body{
   .home-section-5 {
     background-attachment: scroll;
     background-position: top;
-    -webkit-background-size: auto;
-    -moz-background-size:    auto;
-    background-size:         auto;
+    //-webkit-background-size: auto;
+    //-moz-background-size:    auto;
+    //background-size:         auto;
   }
 
   .content {
@@ -179,7 +177,7 @@ body{
 
 }
 
-@media only screen and (max-width: 1020px) {
+@include media-breakpoint-down(lg) {
 
   .site-inner,
   .wrap {
@@ -191,20 +189,13 @@ body{
   }
 
   .site-header {
-    padding-bottom: 10px;
+    //padding-bottom: 10px;
     position: static;
   }
 
   .content,
-  .site-header .widget-area,
   .title-area {
     width: 100%;
-  }
-
-  .genesis-nav-menu,
-  .site-header .widget-area,
-  .site-title {
-    text-align: center;
   }
 
   .header-image .site-title > a {
@@ -218,10 +209,6 @@ body{
 
   .parallax-home .site-inner {
     margin-top: 0;
-  }
-
-  .site-inner {
-    margin-top: 80px;
   }
 
   .full-width-content .content {
@@ -264,20 +251,18 @@ body{
   .pricing-table .one-third:nth-child(3n) {
     border-left: 2px solid #000;
   }
-
+  .header-image .site-title > a {
+    margin: 0;
+  }
 }
 
-@media only screen and (max-width: 860px) {
+@include media-breakpoint-down(md) {
 
   .site-inner,
   .wrap {
     max-width: none;
     width: 100%;
-  }
-
-  .site-inner,
-  .wrap {
-    padding: 0 5%;
+    padding: 0 20px;
   }
 
   .parallax-home .site-inner {
@@ -429,10 +414,20 @@ body{
   .parallax-home .simple-social-icons ul li {
     margin: 0 20px 20px !important;
   }
-
+  .site-header{
+    .title-area{
+      //border: solid thin red;
+    }
+    .menu-toggle{
+      width: 120px;
+      position: absolute;
+      //right:42px;
+      top: 13px;
+    }
+  }
 }
 
-@media only screen and (max-width: 480px) {
+@include media-breakpoint-down(sm) {
 
   .footer-widgets .widget-title,
   .home-even .widget-title,
@@ -440,39 +435,9 @@ body{
     font-size: 36px;
     font-size: 3.6rem;
   }
-
-  .home-even,
-  .home-odd {
-    font-size: 22px;
-    font-size: 2.2rem;
-  }
-
 }
 
-
-@media only screen and (max-width: 860px) {
-  //#genesis-mobile-nav-header{
-  //  border: solid thin red;
-  //}
-
-  .site-header{
-    .title-area{
-      //border: solid thin red;
-    }
-    .menu-toggle{
-      width: 120px;
-      //border: solid thin green;
-      position: absolute;
-      right:42px;
-      top: 3px;
-    }
-  }
-}
-
-
-@media only screen and (max-width: 1020px){
-  .header-image .site-title > a {
-    margin: 0;
-    //border: solid thin green;
-  }
-}
+//@include media-breakpoint-down(xl) {}
+//@include media-breakpoint-down(lg) {}
+//@include media-breakpoint-down(md) {}
+//@include media-breakpoint-down(sm) {}

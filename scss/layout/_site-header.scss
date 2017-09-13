@@ -13,3 +13,18 @@
 .admin-bar .site-header {
   top: 32px;
 }
+
+.site-header .widget-area{
+  width: 100%;
+  @include media-breakpoint-up(lg) {
+    margin-top: -50px;
+    width: 600px;
+    float: right;
+    text-align: right;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-top: 20px;
+  }
+}
+
+

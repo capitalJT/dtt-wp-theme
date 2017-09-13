@@ -44,15 +44,13 @@ p.entry-meta {
 
 .entry-header {
   text-align: center;
-}
-
-.entry-header::after {
-  border-bottom: 1px solid #000;
-  content: "";
-  display: block;
-  margin: 0 auto 20px;
-  padding-bottom: 15px;
-  width: 10%;
+  &:after{
+    border-bottom: 2px solid $brand-color;
+    content: "";
+    display: block;
+    margin: 0 auto 30px;
+    width: 15%;
+  }
 }
 
 .footer-widgets .entry-header::after,
