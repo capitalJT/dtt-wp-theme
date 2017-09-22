@@ -2443,6 +2443,224 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+/* # Contents - Quote Panels
+* - ## Bootstrap Utility Classes
+* - Text Align
+* - Text Transform
+* - Position
+* - Width
+* - Margin All
+* - Margin Top & Bottom
+* - Margin Left & Right
+* - Padding All
+* - Padding Top & Bottom
+* - Padding Left & Right
+* - ## Adaptive Utility Classes
+*/
+/* - ## Bootstrap Utility Classes
+--------------------------------------------------------------------*/
+.pos-r {
+  position: relative !important; }
+
+.pos-a {
+  position: absolute !important; }
+
+.pos-f {
+  position: fixed !important; }
+
+.w-sm {
+  width: 25% !important; }
+
+.w-md {
+  width: 50% !important; }
+
+.w-lg {
+  width: 75% !important; }
+
+.w-full {
+  width: 100% !important; }
+
+.m-a-0 {
+  margin: 0 !important; }
+
+.m-a {
+  margin: 20px !important; }
+
+.m-a-md {
+  margin: 30px !important; }
+
+.m-a-lg {
+  margin: 60px !important; }
+
+.m-t-0 {
+  margin-top: 0 !important; }
+
+.m-b-0 {
+  margin-bottom: 0 !important; }
+
+.m-t, .m-y {
+  margin-top: 20px !important; }
+
+.m-b, .m-y {
+  margin-bottom: 20px !important; }
+
+.m-t-sm, .m-y-sm {
+  margin-top: 10px !important; }
+
+.m-b-sm, .m-y-sm {
+  margin-bottom: 10px !important; }
+
+.m-t-md, .m-y-md {
+  margin-top: 30px !important; }
+
+.m-b-md, .m-y-md {
+  margin-bottom: 30px !important; }
+
+.m-t-lg, .m-y-lg {
+  margin-top: 40px !important; }
+
+.m-b-lg, .m-y-lg {
+  margin-bottom: 40px !important; }
+
+.m-r-0 {
+  margin-right: 0 !important; }
+
+.m-l-0 {
+  margin-left: 0 !important; }
+
+.m-x-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
+.m-r, .m-x {
+  margin-right: 20px !important; }
+
+.m-l, .m-x {
+  margin-left: 20px !important; }
+
+.m-x-auto {
+  margin-right: auto !important;
+  margin-left: auto !important; }
+
+.m-r-md, .m-x-md {
+  margin-right: 30px !important; }
+
+.m-l-md, .m-x-md {
+  margin-left: 30px !important; }
+
+.m-r-lg, .m-x-lg {
+  margin-right: 40px !important; }
+
+.m-l-lg, .m-x-lg {
+  margin-left: 40px !important; }
+
+.p-a-0 {
+  padding: 0 !important; }
+
+.p-a-sm {
+  padding: 10px !important; }
+
+.p-a {
+  padding: 20px !important; }
+
+.p-a-md {
+  padding: 30px !important; }
+
+.p-a-lg {
+  padding: 60px !important; }
+
+.p-t-0 {
+  padding-top: 0 !important; }
+
+.p-b-0 {
+  padding-bottom: 0 !important; }
+
+.p-t-sm, .p-y-sm {
+  padding-top: 10px !important; }
+
+.p-b-sm, .p-y-sm {
+  padding-bottom: 10px !important; }
+
+.p-t, .p-y {
+  padding-top: 20px !important; }
+
+.p-b, .p-y {
+  padding-bottom: 20px !important; }
+
+.p-t-md, .p-y-md {
+  padding-top: 30px !important; }
+
+.p-b-md, .p-y-md {
+  padding-bottom: 30px !important; }
+
+.p-t-lg, .p-y-lg {
+  padding-top: 40px !important; }
+
+.p-b-lg, .p-y-lg {
+  padding-bottom: 40px !important; }
+
+.p-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important; }
+
+.p-r-0 {
+  padding-right: 0 !important; }
+
+.p-r-sm, .p-x-sm {
+  padding-right: 10px !important; }
+
+.p-l-0 {
+  padding-left: 0 !important; }
+
+.p-l-sm, .p-x-sm {
+  padding-left: 10px !important; }
+
+.p-r, .p-x {
+  padding-right: 20px !important; }
+
+.p-l, .p-x {
+  padding-left: 20px !important; }
+
+.p-r-md, .p-x-md {
+  padding-right: 30px !important; }
+
+.p-l-md, .p-x-md {
+  padding-left: 30px !important; }
+
+.p-r-lg, .p-x-lg {
+  padding-right: 40px !important; }
+
+.p-l-lg, .p-x-lg {
+  padding-left: 40px !important; }
+
+/* - ## Adaptive Utility Classes
+--------------------------------------------------------------------*/
+.clearfix {
+  clear: both; }
+
+.is-flex {
+  display: flex; }
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; }
+
+.img-responsive {
+  width: 100%;
+  height: auto; }
+
+.outlined {
+  background-color: pink !important;
+  border: solid 2px red !important; }
+
+.outlined-alt {
+  background-color: blue !important;
+  border: solid 2px green !important; }
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 2s; }
+
 /* Float Clearing
 --------------------------------------------- */
 .author-box:before,
@@ -2592,7 +2810,7 @@ h1, h2, h3, h4, h5, h6,
   font-family: "Josefin Sans", sans-serif;
   font-weight: 500;
   line-height: 1.1;
-  color: inherit; }
+  color: #050044; }
 
 h1, .h1 {
   font-size: 2.5rem; }
@@ -2781,7 +2999,7 @@ input[type="submit"],
 div.wpforms-container-full .wpforms-form input[type=submit],
 div.wpforms-container-full .wpforms-form button[type=submit],
 div.wpforms-container-full .wpforms-form .wpforms-page-button {
-  background-color: #000;
+  background-color: #050044;
   border: none;
   color: #fff;
   cursor: pointer;
@@ -3481,7 +3699,7 @@ img.alignright,
 /* Site Header
 ---------------------------------------------------------------------------------------------------- */
 .site-header {
-  background-color: #000;
+  background-color: #050044;
   left: 0;
   position: fixed;
   top: 0;
@@ -3538,7 +3756,7 @@ c .sidebar li {
 /* Site Footer
 ---------------------------------------------------------------------------------------------------- */
 .site-footer {
-  background-color: #000;
+  background-color: #050044;
   padding-bottom: 20px;
   text-align: center; }
   .site-footer .genesis-nav-menu {
@@ -3959,10 +4177,10 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
   text-align: center; }
 
 .home-even {
-  padding: 140px 0 150px; }
+  padding: 100px 0 100px; }
 
 .home-odd {
-  padding: 190px 0 200px; }
+  padding: 100px 0 100px; }
 
 .home-even .wrap,
 .home-odd .wrap {
@@ -4023,11 +4241,26 @@ div.wpforms-container-full .wpforms-form .wpforms-field-row.wpforms-field-medium
   table-layout: fixed;
   text-align: center;
   width: 100%; }
+  .home-section-1 .widget_custom_html {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 8px; }
+  .home-section-1 .widget-title {
+    color: #C9A533;
+    line-height: 1em; }
 
 .home-section-1 .full-height {
   display: table-cell;
   vertical-align: middle;
   width: 100%; }
+
+.home-section-3 .widget-title {
+  color: #050044; }
+
+.home-section-3 a.phone-num {
+  color: #050044;
+  font-size: 2em;
+  font-weight: bold; }
 
 #my-form {
   max-width: 600px;

@@ -2,7 +2,7 @@
 // Color system
 //
 
-$brand-color: #C9A533;
+
 
 $white:  #fff !default;
 $gray-100: #f8f9fa !default;
@@ -68,3 +68,9 @@ $theme-colors: map-merge((
         light: $gray-100,
         dark: $gray-800
 ), $theme-colors);
+
+// DTT Colors
+$color-primary: #050044;
+$color-secondary: #C9A533;
+$color-beige: #DTC099;
+$color-brows: #81450D;

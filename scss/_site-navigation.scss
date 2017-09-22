@@ -35,7 +35,7 @@
 .genesis-nav-menu .sub-menu a:hover,
 .genesis-nav-menu .sub-menu .current-menu-item > a:focus,
 .genesis-nav-menu .sub-menu .current-menu-item > a:hover {
-  color: $brand-color;
+  color: $color-secondary;
 }
 
 .genesis-nav-menu > .menu-item > a {
@@ -142,7 +142,7 @@
 }
 
 .menu-item.current-menu-item{
-  border-bottom: solid 2px $brand-color;
+  border-bottom: solid 2px $color-secondary;
 }
 
 #menu-primary-menu{

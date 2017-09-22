@@ -159,7 +159,7 @@ $headings-margin-bottom: ($spacer / 2) !default;
 $headings-font-family:   'Josefin Sans', sans-serif;;
 $headings-font-weight:   500 !default;
 $headings-line-height:   1.1 !default;
-$headings-color:         inherit !default;
+$headings-color:         $color-primary !default;
 
 $display1-size: 6rem !default;
 $display2-size: 5.5rem !default;
@@ -742,3 +742,8 @@ $kbd-bg:                      $gray-900 !default;
 
 $pre-color:                   $gray-900 !default;
 $pre-scrollable-max-height:   340px !default;
+
+// Custom
+
+$global-margin: 20px;
+$global-padding: 20px;

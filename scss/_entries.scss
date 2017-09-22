@@ -41,7 +41,7 @@ p.entry-meta {
 .entry-header {
   text-align: center;
   &:after{
-    border-bottom: 2px solid $brand-color;
+    border-bottom: 2px solid $color-secondary;
     content: "";
     display: block;
     margin: 0 auto 30px;

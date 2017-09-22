@@ -9,11 +9,11 @@
 }
 
 .home-even {
-  padding: 140px 0 150px;
+  padding: 100px 0 100px;
 }
 
 .home-odd {
-  padding: 190px 0 200px;
+  padding: 100px 0 100px;
 }
 
 .home-even .wrap,
@@ -51,7 +51,7 @@
 
 .home-odd .featured-content .entry-title a:focus,
 .home-odd .featured-content .entry-title a:hover {
-  color: $brand-color;
+  color: $color-secondary;
 }
 
 .home-even p:last-child,
@@ -83,6 +83,15 @@
   table-layout: fixed;
   text-align: center;
   width: 100%;
+  .widget_custom_html{
+    background-color: rgba(0,0,0,0.5);
+    padding: 40px;
+    border-radius: 8px;
+  }
+  .widget-title{
+    color: $color-secondary;
+    line-height:1em;
+  }
 }
 
 .home-section-1 .full-height {
@@ -91,6 +100,16 @@
   width: 100%;
 }
 
+.home-section-3{
+  .widget-title{
+    color: $color-primary;
+  }
+  a.phone-num{
+    color: $color-primary;
+    font-size:2em;
+    font-weight: bold;
+  }
+}
 #my-form{
   max-width: 600px;
   margin-left: auto;

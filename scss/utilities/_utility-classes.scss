@@ -1,0 +1,130 @@
+/* # Contents - Quote Panels
+* - ## Bootstrap Utility Classes
+* - Text Align
+* - Text Transform
+* - Position
+* - Width
+* - Margin All
+* - Margin Top & Bottom
+* - Margin Left & Right
+* - Padding All
+* - Padding Top & Bottom
+* - Padding Left & Right
+* - ## Adaptive Utility Classes
+*/
+
+/* - ## Bootstrap Utility Classes
+--------------------------------------------------------------------*/
+// - Position
+.pos-r{position:relative!important}
+.pos-a{position:absolute!important}
+.pos-f{position:fixed!important}
+
+// - Width
+.w-sm{width:25%!important}
+.w-md{width:50%!important}
+.w-lg{width:75%!important}
+.w-full{width:100%!important}
+
+// - Margin All
+.m-a-0{margin:0!important}
+.m-a{margin:20px!important}
+.m-a-md{margin:30px!important}
+.m-a-lg{margin:60px!important}
+
+// - Margin Top & Bottom
+.m-t-0{margin-top:0!important}
+.m-b-0{margin-bottom:0!important}
+.m-t,.m-y{margin-top: $global-margin !important}
+.m-b,.m-y{margin-bottom: $global-margin !important}
+.m-t-sm,.m-y-sm{margin-top: $global-margin / 2 !important}
+.m-b-sm,.m-y-sm{margin-bottom: $global-margin / 2 !important}
+.m-t-md,.m-y-md{margin-top: $global-margin * 1.5 !important}
+.m-b-md,.m-y-md{margin-bottom: $global-margin * 1.5 !important}
+.m-t-lg,.m-y-lg{margin-top: $global-margin * 2 !important}
+.m-b-lg,.m-y-lg{margin-bottom: $global-margin * 2 !important}
+
+// - Margin Left & Right
+.m-r-0{margin-right:0!important}
+.m-l-0{margin-left:0!important}
+.m-x-0{
+  margin-left:0!important;
+  margin-right:0!important;
+}
+.m-r,.m-x{margin-right: $global-margin !important}
+.m-l,.m-x{margin-left: $global-margin !important}
+.m-x-auto{margin-right:auto!important;margin-left:auto!important}
+.m-r-md,.m-x-md{margin-right: $global-margin * 1.5 !important}
+.m-l-md,.m-x-md{margin-left: $global-margin * 1.5 !important}
+.m-r-lg,.m-x-lg{margin-right: $global-margin * 2 !important}
+.m-l-lg,.m-x-lg{margin-left: $global-margin * 2 !important}
+
+// - Padding All
+.p-a-0{padding:0!important}
+.p-a-sm{padding:10px!important}
+.p-a{padding:20px!important}
+.p-a-md{padding:30px!important}
+.p-a-lg{padding:60px!important}
+
+// - Padding Top & Bottom
+.p-t-0{padding-top:0!important}
+.p-b-0{padding-bottom:0!important}
+.p-t-sm,.p-y-sm{padding-top: $global-padding / 2 !important}
+.p-b-sm,.p-y-sm{padding-bottom: $global-padding / 2 !important}
+.p-t,.p-y{padding-top: $global-padding !important}
+.p-b,.p-y{padding-bottom: $global-padding !important}
+.p-t-md,.p-y-md{padding-top: $global-padding * 1.5 !important}
+.p-b-md,.p-y-md{padding-bottom: $global-padding * 1.5 !important}
+.p-t-lg,.p-y-lg{padding-top: $global-padding * 2 !important}
+.p-b-lg,.p-y-lg{padding-bottom: $global-padding * 2 !important}
+
+// - Padding Left & Right
+.p-x-0{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.p-r-0{padding-right:0!important}
+.p-r-sm,.p-x-sm{padding-right: $global-padding / 2 !important}
+.p-l-0{padding-left:0!important}
+.p-l-sm,.p-x-sm{padding-left: $global-padding / 2 !important}
+.p-r,.p-x{padding-right: $global-padding !important}
+.p-l,.p-x{padding-left: $global-padding !important}
+.p-r-md,.p-x-md{padding-right: $global-padding * 1.5 !important}
+.p-l-md,.p-x-md{padding-left: $global-padding * 1.5 !important}
+.p-r-lg,.p-x-lg{padding-right: $global-padding * 2 !important}
+.p-l-lg,.p-x-lg{padding-left: $global-padding * 2 !important}
+
+/* - ## Adaptive Utility Classes
+--------------------------------------------------------------------*/
+.clearfix {
+  clear: both;
+}
+
+.is-flex{
+  display: flex;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive{
+  width: 100%;
+  height: auto;
+}
+
+.outlined{
+  background-color: pink !important;
+  border: solid 2px red !important;
+}
+
+.outlined-alt{
+  background-color: blue !important;
+  border: solid 2px green !important;
+}
+
+.animated {
+  animation-fill-mode: both;
+  animation-duration: 2s;
+}

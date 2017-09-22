@@ -2,7 +2,7 @@
 ---------------------------------------------------------------------------------------------------- */
 
 .site-footer {
-  background-color: #000;
+  background-color: $color-primary;
   padding-bottom: 20px;
   text-align: center;
   .genesis-nav-menu{
@@ -22,7 +22,7 @@
 
 .site-footer a:hover,
 .site-footer a:focus {
-  color: $brand-color;
+  color: $color-secondary;
 }
 
 .site-footer p {
