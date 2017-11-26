@@ -6,6 +6,9 @@
 ### Framework:
 - Genesis
 
+### Theme:
+- Parallax Pro
+
 ### Plugins:
 - Advanced Code Editor
 - Advanced Custom Fields PRO
@@ -23,3 +26,6 @@
 - Post Types Order
 - TinyMCE Advanced
 - WPForms
+
+### Dev Notes:
+- SASS compilation, minification, and validation is handled by CodeKit
